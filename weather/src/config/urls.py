@@ -20,6 +20,6 @@ import weatherapp
 from weatherapp import urls
 
 urlpatterns = [
-    path('weatherapp/', include('weatherapp.urls')),
+    path('', include('weatherapp.urls')),
     path('admin/', admin.site.urls),
 ]
