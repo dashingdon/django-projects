@@ -7,11 +7,11 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
+        <meta name="description" content="{% block meta_description %} weather app by dashingdon {% endblock %}">
         <meta name="author" content="">
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-        <title>Breezed HTML Bootstrap Template</title>
+        <title>{% block title %} Breezed HTML Bootstrap Template {% endblock %} </title>
 
         <!--
 
@@ -53,13 +53,13 @@
                     <div class="col-12">
                         <nav class="main-nav">
                             <!-- ***** Logo Start ***** -->
-                            <a href="index.html" class="logo">
+                            <a href="#" class="logo">
                                 WEATHER
                             </a>
                             <!-- ***** Logo End ***** -->
                             <!-- ***** Menu Start ***** -->
                             <ul class="nav">
-                                <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+                                <li class="scroll-to-section"><a href="first.html" class="active">Home</a></li>
                                 <li class="scroll-to-section"><a href="#about">About</a></li>
                                 <li class="scroll-to-section"><a href="#projects">Projects</a></li>
                                 <li class="submenu">
@@ -90,7 +90,7 @@
         <!-- ***** Search Area ***** -->
         <div id="search">
             <button type="button" class="close">×</button>
-            <form id="contact" action="#" method="get">
+            <form id="search" action="#" method="get">
                 <fieldset>
                     <input type="search" name="q" placeholder="SEARCH KEYWORD(s)" aria-label="Search through site content">
                 </fieldset>
@@ -104,7 +104,7 @@
 
 
 
-            {% endblock content %}
+            {% endblock %}
 
         <!-- ***** Footer Start ***** -->
         <footer>

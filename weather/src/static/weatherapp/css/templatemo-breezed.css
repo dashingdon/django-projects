@@ -356,7 +356,7 @@ header
 
 .header-area .main-nav {
   min-height: 80px;
-  background: transparent;
+  /*background: #5fb759; added */ 
 }
 
 .header-area .main-nav .logo {
@@ -640,6 +640,8 @@ header
 
 .header-area.header-sticky {
   min-height: 80px;
+  /*background-color: #5fb759;  Added */
+  background: linear-gradient(145deg, rgba(51,155,158,1) 0%, rgba(104,204,152,1) 100%); /* Added */
 }
 
 .header-area.header-sticky .nav {

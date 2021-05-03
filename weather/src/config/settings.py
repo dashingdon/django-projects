@@ -128,3 +128,27 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Email settings
+# run local email server for testing from command line 
+# python3 -m smtpd -n -c DebuggingServer localhost:1025
+
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = '1025'
+EMAIL_HOST_USER = ''
+EMIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
+# EMAIL_USE_SSL = False
+
+# Email settings
+## myaccount.google.com/lesssecureapps // setup 
+## accounts.google.com/DisplayUnockCaptcha
+## OR create an app in google services and use that password instead of email password
+## myaccount.google.com/apppasswords
+
+#EMAIL_HOST = 'smtp.gmail.com'
+#EMAIL_PORT = 587
+#EMAIL_HOST_USER = 'your email adreess'
+#EMIL_HOST_PASSWORD = 'your email password'
+#EMAIL_USE_TLS = True
+##EMAIL_USE_SSL = False
