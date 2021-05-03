@@ -133,8 +133,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # run local email server for testing from command line 
 # python3 -m smtpd -n -c DebuggingServer localhost:1025
 
-EMAIL_HOST = 'localhost'
-EMAIL_PORT = '1025'
+EMAIL_HOST = '127.0.0.1'
+EMAIL_PORT = 1025
 EMAIL_HOST_USER = ''
 EMIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = False

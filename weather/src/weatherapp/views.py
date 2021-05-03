@@ -9,7 +9,7 @@ from django.core.mail import send_mail
 def index(request):
     #return HttpResponse("Weather for the address")
     #template = loader.get_template('weatherapp/index.html')
-    return render(request,'first.html',{})
+    return render(request,'home.html',{})
 
 def contact(request):
     #return HttpResponse("Weather for the address")
